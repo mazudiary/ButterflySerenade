@@ -61,19 +61,19 @@ let touchEndX = 0;
 const galleryImages = [
   {
     src: "./assets/butterfly1.png",
-    caption: "A wish for endless laughter",
+    caption: "A wish for endless laughter, the kind that fills every moment we share: Where your smile lights up even the quietest of days",
   },
   {
     src: "./assets/butterfly2.png",
-    caption: "A wish for stolen kisses",
+    caption: "A wish for stolen moments: Where your voice, gentle and sweet, is the melody I hold close, and your hand in mine makes the world feel just right",
   },
   {
     src: "./assets/butterfly3.png",
-    caption: "A wish for peaceful nights",
+    caption: "A wish for peaceful nights: Where I find solace in your presence, in the warmth of your embrace, and in the sound of your voice that calms my heart",
   },
   {
     src: "./assets/butterfly4.png",
-    caption: "A wish for forever",
+    caption: "A wish for forever: Where time stops as we walk side by side, hand in hand, creating memories of love that will last a lifetime",
   },
 ];
 let currentImageIndex = -1;
