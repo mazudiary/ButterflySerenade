@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Butterfly</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <span class="heart heart1">♥</span>
+      <span class="heart heart2">♥</span>
+      <span class="heart heart3">♥</span>
+      <span class="heart heart4">♥</span>
+      For My Butterfly
+    </header>
+
+    <div class="music-button-container">
+      <button id="musicButton" class="music-button">
+        <span class="heart-icon">💖</span>
+        <span id="musicText">Play Music</span>
+      </button>
+      <audio id="backgroundMusic" loop>
+        <source src="./assets/bensound-memories.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <section>
+      <div class="section-title">Two Timelines</div>
+      <div class="story">
+        <div class="image-container">
+          <img src="./assets/two-timelines.jpg" alt="Two Timelines" />
+          <p class="caption">Our separate journeys</p>
+        </div>
+        <div class="description">
+          Like two rivers flowing apart, unaware of the ocean they’d one day
+          become, our lives danced separately—yet fate wove our paths into one
+          beautiful tapestry of love.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">One Connection</div>
+      <div class="story">
+        <div class="description">
+          In a fleeting moment, the stars paused, the world hushed, and our
+          souls met. Eyes locked, hearts intertwined—a spark that turned into an
+          eternal flame.
+        </div>
+        <div class="image-container">
+          <img src="./assets/one-connection.jpg" alt="One Connection" />
+          <p class="caption">The moment we met</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Endless Possibilities</div>
+      <div class="story">
+        <div class="image-container">
+          <img
+            src="./assets/endless-possibilities.jpg"
+            alt="Endless Possibilities"
+          />
+          <p class="caption">Our future together</p>
+        </div>
+        <div class="description">
+          With you, my love, every dawn whispers promises of joy. Together,
+          we’ll paint a future of dreams, where every step is a melody and every
+          glance a treasure.
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <div class="section-title">Our Timeline</div>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-date">dd MM yyyy</div>
+          <div class="timeline-content">
+            <p>First hello 💬</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">dd MM yyyy</div>
+          <div class="timeline-content">
+            <p>My Butterfly was born 🦋</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Butterfly Wishes</div>
+      <div class="gallery">
+        <img
+          src="./assets/butterfly1.png"
+          alt="Butterfly 1"
+          onclick="openLightbox(this, 'A wish for endless laughter')"
+        />
+        <img
+          src="./assets/butterfly2.png"
+          alt="Butterfly 2"
+          onclick="openLightbox(this, 'A wish for stolen kisses')"
+        />
+        <img
+          src="./assets/butterfly3.png"
+          alt="Butterfly 3"
+          onclick="openLightbox(this, 'A wish for peaceful nights')"
+        />
+        <img
+          src="./assets/butterfly4.png"
+          alt="Butterfly 4"
+          onclick="openLightbox(this, 'A wish for forever')"
+        />
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Love Letters</div>
+      <div class="letters">
+        <div class="letter">
+          <h3>Letter 1: When I First Dreamed of You</h3>
+          <p>
+            My dearest Butterfly, even before we met, I felt you in my dreams.
+            On a quiet evening, as the sun painted the sky pink and gold, I saw
+            you—a vision of grace. You were my destiny calling.
+          </p>
+        </div>
+        <div class="letter">
+          <h3>Letter 2: In the Silent Nights</h3>
+          <p>
+            Under the silver moon, I’d whisper love into the night, hoping the
+            breeze would carry it to you. Each star twinkled with our future,
+            and I knew one day you’d hear my heart.
+          </p>
+        </div>
+        <div class="letter">
+          <h3>Letter 3: Our Forever</h3>
+          <p>
+            I see us dancing in the kitchen, laughing under the stars, building
+            a life of warmth and light. With you, every moment is a melody, and
+            I’ll cherish you forever, my love.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Nikkah Countdown</div>
+      <div class="countdown" id="countdown">
+        <div id="time-units">
+          <div class="time-unit">
+            <span id="days"></span>
+            <p>Days</p>
+          </div>
+          <div class="time-unit">
+            <span id="hours"></span>
+            <p>Hours</p>
+          </div>
+          <div class="time-unit">
+            <span id="minutes"></span>
+            <p>Minutes</p>
+          </div>
+          <div class="time-unit">
+            <span id="seconds"></span>
+            <p>Seconds</p>
+          </div>
+        </div>
+        <p id="forever" style="display: none">Our forever has begun!</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">My Promise to You</div>
+      <div class="vow">
+        <p>
+          I promise to be your shelter and your sky, to hold you close through
+          every storm and sunrise. My heart beats for you, my Butterfly—forever
+          is just the beginning.
+        </p>
+      </div>
+    </section>
+
+    <section id="poem">
+      <div class="section-title">A Poem for You</div>
+      <div class="poem-content">
+        <p>
+          In the garden of my heart, you bloom,<br />
+          A butterfly with wings of light,<br />
+          Each flutter whispers love’s sweet tune,<br />
+          Guiding me through day and night.<br />
+          <br />
+          Your laughter is the morning dew,<br />
+          Your smile, the sun’s warm embrace,<br />
+          With every step, my world renews,<br />
+          In your love, I’ve found my place.<br />
+          <br />
+          So here’s my vow, my dearest one,<br />
+          To love you more with each sunrise,<br />
+          Together, we’ll dance till time is done,<br />
+          Underneath these endless skies.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <span class="floating-heart" style="left: 10%; animation-delay: 0s"
+        >♥</span
+      >
+      <span class="floating-heart" style="left: 30%; animation-delay: 1s"
+        >♥</span
+      >
+      <span class="floating-heart" style="left: 50%; animation-delay: 2s"
+        >♥</span
+      >
+      <span class="floating-heart" style="left: 70%; animation-delay: 3s"
+        >♥</span
+      >
+      <span class="floating-heart" style="left: 90%; animation-delay: 4s"
+        >♥</span
+      >
+      With all my heart, yours always — Your Mazu
+    </footer>
+
+    <div
+      id="lightbox"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 100;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <img
+        id="lightbox-img"
+        src=""
+        style="
+          max-width: 90%;
+          max-height: 80%;
+          border-radius: 10px;
+          transform: scale(0);
+          transition: transform 0.3s ease;
+        "
+      />
+      <p
+        id="lightbox-caption"
+        style="
+          color: #fff;
+          font-family: 'Sacramento', cursive;
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        "
+      ></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
